@@ -1,5 +1,3 @@
-## MOVE THIS FILE to `.github/workflows/docker-build.yaml` TO EXECUTE IT
-
 # This is a basic workflow to help you get started with Actions
 
 name: Docker Build and Push
@@ -44,4 +42,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: pixelpotato/python-helloworld:latest
+          tags: {{ YOUR_DOCKERHUB_REPOSITORY }}/python-helloworld:latest
